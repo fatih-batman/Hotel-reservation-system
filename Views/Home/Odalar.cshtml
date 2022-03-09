@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Odalar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Odalar</h1>
+@model List<room_type>
+<table class="table table-bordered">
+    <tr>
+        <th>oda id'si</th>
+        <th>Oda derecesi</th>
+        <th>maximum kapasite</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.id</td>
+            <td>@x.description</td>
+            <td>@x.max_capasity</td>
+        </tr>
+    }
+</table>

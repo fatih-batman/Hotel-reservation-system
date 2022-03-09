@@ -1,0 +1,72 @@
+﻿            
+
+@{
+    ViewData["Title"] = "Rezervasyon2";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@addTagHelper*,Microsoft.AspNetCore.Mvc.TagHelpers 
+
+@model Hotel.Models.reservationX
+
+<form method="POST">
+
+    <table>
+        <tr>
+            <td>
+                <label asp-for="date_in">Giriş tarihi</label>
+            </td>
+            <td>
+                <input asp-for="date_in" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label asp-for="date_out">Çıkış tarihi</label>
+            </td>
+            <td>
+                <input asp-for="date_out" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label asp-for="made_by">made_by</label>
+            </td>
+            <td>
+                <input asp-for="made_by" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label asp-for="guest_first_name">Konuk isim</label>
+            </td>
+            <td>
+                <input asp-for="guest_first_name" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label asp-for="guest_last_name">Konuk soyisim</label>
+            </td>
+            <td>
+                <input asp-for="guest_last_name" />
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <button type="submit">Submit</button>
+            </td>
+
+        </tr>
+
+    </table>
+
+
+</form>
+
